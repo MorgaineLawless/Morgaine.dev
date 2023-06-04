@@ -459,3 +459,131 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* About Me Section */
+
+.main {
+    background: #131313;
+    padding: 10rem 0;
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90%;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content {
+    color: #fff;
+    width: 100%;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #A770EF;
+    background-image: linear-gradient(to right, #A770EF 0%, #CF8BF3 50%, #FDB99B 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.main__content h2 {
+    font-size: 2rem;
+    background: #A770EF;
+    background: -webkit-linear-gradient(to right, #A770EF, #FDB99B);
+    background: linear-gradient(to right, #A770EF, #FDB99B);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#card-2 {
+    background: #ff512f;
+    background: -webkit-gradient(to right, #A770EF, #FDB99B);
+    background: linear-gradient(to right, #A770EF, #FDB99B);
+}
+
+@media screen and (max-width:1100px) {
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90%;
+    }
+
+    .main__img--container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__img--card {
+        height: 425px;
+        width: 425px;
+    }
+
+    .main__content {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main__content h1 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    .main__content h2 {
+        font-size: 2.5rem;
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main__img--card {
+        width: 250px;
+        height: 250px;
+    }
+
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main__content h2 {
+        font-size: 2rem;
+    }
+
+    .main__content p { 
+        margin-top: 2rem;
+    }
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;
+    }
+}
