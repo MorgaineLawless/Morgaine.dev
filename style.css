@@ -394,6 +394,8 @@
 
 .portfolio__card button:hover {
     cursor: pointer;
+    background: #A770EF;
+    transition: all 0.35s;
 }
 
 .portfolio__card:hover {
