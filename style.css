@@ -389,6 +389,15 @@
     background-image: linear-gradient(-225deg, #A770EF 0%, #CF8BF3 50%, #FDB99B 100%);
 }
 
+.portfolio__img {
+    height: 65%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
 .portfolio__card h2 {
     text-align: center;
 }
@@ -407,7 +416,7 @@
 
 .portfolio__card button {
     color: #fff;
-    padding: 14px 24px;
+    padding: 14px 50px;
     border: none;
     outline: none;
     border-radius: 4px;
@@ -415,9 +424,21 @@
     font-size: 1rem;
 }
 
-.portfolio__card button:hover {
+.divider {
+    width: 5px;
+    height: auto;
+    display: inline-block;
+}
+
+.link__btn:hover {
     cursor: pointer;
     background: #A770EF;
+    transition: all 0.35s;
+}
+
+.code__btn:hover {
+    cursor: pointer;
+    background-color: #FDB99B;
     transition: all 0.35s;
 }
 
